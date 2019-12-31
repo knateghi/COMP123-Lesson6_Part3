@@ -11,6 +11,18 @@ namespace COMP123_Lesson6_Part3
     {
         static void Main(string[] args)
         {
+            Card myCard = new Card("Ace", "Hearts");
+            myCard.Show();
+
+            WaiForAnyKey();
+        }
+
+        private static void WaiForAnyKey()
+        {
+            Console.WriteLine("\n");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Please hit any key to exit...");
+            Console.ReadKey();
         }
     }
 }
